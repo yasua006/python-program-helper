@@ -1,16 +1,6 @@
-from subprocess import CompletedProcess
 import questionary
 
 from modules.sp_helper import *
-
-
-def handle_sp_errors(comp_process: CompletedProcess[str],
-    success_msg: str, err_msg: str) -> None:
-
-    if not comp_process.stderr:
-        print(success_msg)
-    else:
-        print(err_msg)
 
 
 def ask_frontend_template() -> None:
