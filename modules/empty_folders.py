@@ -9,7 +9,7 @@ def ask_common_vanilla_frontend() -> None:
     if agree:
         print("Attempting to add common empty vanilla frontend folders...")
         add_empty_output = sp_run(
-            "mkdir images modules",
+            "mkdir images icons modules",
             capture=True
         )
 
