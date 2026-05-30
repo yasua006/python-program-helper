@@ -21,7 +21,7 @@ def ask_common_vanilla_frontend() -> None:
 
 
 def ask_common_flask_folders() -> None:
-    agree = questionary.confirm("Add common Flask folders? ").ask()
+    agree = questionary.confirm("Add common empty Flask folders? ").ask()
 
     if agree:
         print("Attempting to add common Flask folders...")
