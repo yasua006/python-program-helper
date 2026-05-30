@@ -8,3 +8,8 @@ En Python program som gir deg en custom sane template å starte med.
 2. ![Showing question 2](./images/question_2.png)
 
 3. ![Showing question 3](./images/question_3.png)
+
+4. ![Showing question 4](./images/question_4.png)
+
+Svar ja:
+5. ![Showing question 5](./images/question_5.png)
