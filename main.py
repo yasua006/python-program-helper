@@ -1,24 +1,16 @@
-import questionary
-import subprocess
 import atexit
 
+from modules.frontend_template import *
+from modules.empty_folders import ask_common_vanilla_frontend
 
-use_frontend_template = questionary.confirm("Use Sane Vanilla CSS template? ").ask()
 
-if use_frontend_template:
-    print("Attempting to clone template...")
-    successful_clone = subprocess.run(
-        ['git clone --progress https://github.com/placewith5s/sane-vanilla-css | grep -q "Cloning into"'],
-        text=True, shell=True,
-        capture_output=True
-    )
+def main() -> None:
+    ask_frontend_template()
+    ask_common_vanilla_frontend()
 
-    if not successful_clone.stderr:
-        print("Cloned template")
-    else:
-        print("Could not clone template!")
 
-    print(successful_clone.stderr)
+if __name__ == '__main__':
+    main()
 
 
 @atexit.register
