@@ -1,5 +1,4 @@
 import subprocess as sp
-from subprocess import CompletedProcess
 
 
 def sp_run(cmd: str, capture: bool = False):
@@ -10,10 +9,10 @@ def sp_run(cmd: str, capture: bool = False):
         )
         return result
     else:
-        sp_run([cmd], text=True, shell=True)
+        sp.run([cmd], text=True, shell=True)
 
 
-def handle_sp_errors(comp_process: CompletedProcess[str],
+def handle_sp_errors(comp_process,
     success_msg: str, err_msg: str) -> None:
 
     if not comp_process.stderr:
