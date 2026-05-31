@@ -1,5 +1,13 @@
-# Python Program Helper
+# Extend Init
 En Python program som gir deg en custom sane template å starte med.
+
+
+## Anbefalinger
+### Python Prosjekter
+Bruk `uv init` før du kjører programmet.
+
+### Nodejs Prosjekter
+Bruk `npm init` før du kjører programmet.
 
 
 ## Demo
